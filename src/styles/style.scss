@@ -1,0 +1,53 @@
+// ITCSS methodology. version by archas
+
+/*
+    1. Settings: global variables, configuration, paths, colors, breakpoints settings, fonts vars
+    2. Tools: mixins, functions
+    3. Generic: normalize, reset, * (all elements), box-sizing, etc.
+    4. Elements (base): HTML elements without classes, base selectors, body, html, h1-h6, a, ul, p, etc.
+    5. Objects: general abstract elements with classes, design patterns, no cosmetics and details, agnostically named, .container, wrappers, .section, .ui-list, etc.
+    6. Components: more detailed designed pieces of UI with classes, non-abstract, may extend objects e.g. .products-list (which for example extends .ui-list), .carousel, .navbar, .hero, etc.
+    7. Trumps: winners with high specificity, overrides, importants (try to avoid them btw.).
+*/
+
+// Settings
+@import 'settings.breakpoints';
+@import 'settings.dirs';
+@import 'settings.colors';
+@import 'settings.dimensions';
+@import '../../bower_components/compass-breakpoint/stylesheets/breakpoint';
+@import '../../bower_components/sass-core/dist/sass-core';
+@import 'settings.fonts';
+
+// Tools
+@import 'tools.functions';
+@import 'tools.mixins';
+@import 'tools.placeholders';
+
+// Generic
+@import '../../bower_components/meyer-reset/stylesheets/meyer-reset';
+@import '../../bower_components/normalize-css/normalize';
+@import 'generic.all';
+
+// Elements (base)
+@import 'elements.page';
+@import 'elements.headings';
+@import 'elements.links';
+@import 'elements.lists';
+@import 'elements.images';
+
+// Objects
+@import 'objects.wrappers';
+@import 'objects.forms';
+@import 'objects.animations';
+
+// Components
+@import 'components.buttons';
+@import 'components.header';
+@import 'components.footer';
+
+// Trumps
+@import 'trumps.links';
+@import 'trumps.forms';
+@import 'trumps.placeholders';
+@import 'trumps.scrollbar';

@@ -1,0 +1,12 @@
+{
+  "name": "fs-bundle-default",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "meyer-reset": "*",
+    "compass-breakpoint": "2.*.*",
+    "sass-core": "*",
+    "jquery": "2.*.*",
+    "normalize-css": "^4.2.0"
+  }
+}

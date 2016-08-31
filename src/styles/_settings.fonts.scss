@@ -1,0 +1,20 @@
+$sc-font-formats: woff;
+
+//@include sc-font-face('Name', 'filename', weight, style);
+
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-Light-webfont', $font-w-light);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-LightItalic-webfont', $font-w-light, italic);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-Regular-webfont', $font-w-normal);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-Italic-webfont', $font-w-normal, italic);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-Semibold-webfont', $font-w-semibold);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-SemiboldItalic-webfont', $font-w-semibold, italic);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-Bold-webfont', $font-w-bold);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-BoldItalic-webfont', $font-w-bold, italic);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-ExtraBold-webfont', $font-w-black);
+// @include sc-font-face('OpenSans', '#{$openSansDir}OpenSans-ExtraBoldItalic-webfont', $font-w-black, italic);
+
+// $supplyFonts: Verdana, Tahoma, Arial, sans-serif;
+
+// $openSans: 'OpenSans', $supplyFonts;
+
+// $iconsFont: 'Material-Design-Iconic-Font';

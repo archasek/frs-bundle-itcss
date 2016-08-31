@@ -1,0 +1,13 @@
+%clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%center-y {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

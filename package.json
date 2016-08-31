@@ -1,0 +1,27 @@
+{
+  "name": "frs-bundle-itcss",
+  "description": "Default front-end bundle with ITCSS for the Frontend-starter",
+  "version": "1.0.0",
+  "private": true,
+  "author": "archasek <archasek@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/implico/frs-bundle-itcss.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-sass-lint": "^1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/implico/frs-bundle-itcss/issues"
+  },
+  "homepage": "https://github.com/implico/frs-bundle-itcss#readme",
+  "main": "frs.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
