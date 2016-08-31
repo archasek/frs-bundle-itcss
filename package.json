@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/implico/frs-bundle-itcss.git"
+    "url": "git+https://github.com/archasek/frs-bundle-itcss.git"
   },
   "dependencies": {},
   "devDependencies": {
     "gulp-sass-lint": "^1.2.0"
   },
   "bugs": {
-    "url": "https://github.com/implico/frs-bundle-itcss/issues"
+    "url": "https://github.com/archasek/frs-bundle-itcss/issues"
   },
-  "homepage": "https://github.com/implico/frs-bundle-itcss#readme",
+  "homepage": "https://github.com/archasek/frs-bundle-itcss#readme",
   "main": "frs.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
