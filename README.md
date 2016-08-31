@@ -7,3 +7,4 @@ for the FRS (https://github.com/implico/frontend-starter)
 2. `npm install`
 3. `bower install`
 4. `frs start`
+
