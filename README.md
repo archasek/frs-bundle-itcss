@@ -1,6 +1,6 @@
 # Default front-end bundle with ITCSS
-## for the FRS (https://github.com/implico/frontend-starter)
+for the FRS (https://github.com/implico/frontend-starter)
 
-- `npm install`
-- `bower install`
-- `frs start`
+1. `npm install`
+2. `bower install`
+3. `frs start`
