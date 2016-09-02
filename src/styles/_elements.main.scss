@@ -1,0 +1,8 @@
+main {
+  width: 100%;
+  padding-top: unit-vw(30px);
+
+  @include respond-to(desktop) {
+    padding-top: unit-vw(50px, desktop);
+  }
+}

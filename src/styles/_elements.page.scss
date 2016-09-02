@@ -1,11 +1,10 @@
 html {
-  min-height: initial;
+  @include font-px(md);
+  
   box-sizing: border-box;
+  // font-family: $openSans;
 }
 
 body {
   width: 100%;
-  min-height: initial;
-
-  // font-family: $openSans;
 }

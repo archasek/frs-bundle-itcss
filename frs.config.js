@@ -23,7 +23,7 @@ module.exports = function(config, dirs) {
   // config.styles.cssNamenano.safe = false;
 
   //inject - enable group-css-media-queries plugin (disabled by default as unsafe)
-  // config.styles.inject.optimizeMediaQueries = true;
+  config.styles.inject.optimizeMediaQueries = true;
 
   var sassLint = require('gulp-sass-lint');
 
@@ -31,8 +31,11 @@ module.exports = function(config, dirs) {
     return stream
       .pipe(sassLint({
         rules: {
-          'no-css-comments': false,
-          'property-sort-order': 0
+          'no-css-comments': 0,
+          'property-sort-order': 0,
+          'no-color-literals': 0,
+          'no-trailing-whitespace': 0,
+          'mixins-before-declarations': 0
         }
       }))
       .pipe(sassLint.format())

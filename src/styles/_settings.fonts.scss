@@ -18,3 +18,14 @@ $sc-font-formats: woff;
 // $openSans: 'OpenSans', $supplyFonts;
 
 // $iconsFont: 'Material-Design-Iconic-Font';
+
+$sc-font-sets: (
+  /* small font */
+  sm: (mobile: 15px, tablet: 13px, desktop: 17px),
+
+  /* normal font */
+  md: (mobile: 16px, tablet: 18px, desktop: 14px),
+
+  /* header font */
+  lg: (mobile: 18px, tablet: 22px, desktop: 22px)
+);

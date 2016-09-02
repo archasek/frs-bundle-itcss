@@ -1,0 +1,16 @@
+.btn {
+  @include font-vw(md);
+
+  display: inline-block;
+  padding: unit-vw(10px) unit-vw(50px);
+  border-radius: 28px;
+  color: $white;
+  font-weight: bold;
+  background-color: $color-button-default;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include respond-to(desktop) {
+    padding: unit-vw(10px, desktop) unit-vw(65px, desktop);
+  }
+}
