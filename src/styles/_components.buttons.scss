@@ -6,11 +6,16 @@
   border-radius: 28px;
   color: $white;
   font-weight: bold;
-  background-color: $color-button-default;
+  background-color: $black;
   text-decoration: none;
   cursor: pointer;
 
   @include respond-to(desktop) {
     padding: unit-vw(10px, desktop) unit-vw(65px, desktop);
+  }
+
+  &--green {
+    color: $white;
+    background-color: $color-button-default;
   }
 }
