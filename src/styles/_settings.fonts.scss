@@ -21,11 +21,11 @@ $sc-font-formats: woff;
 
 $sc-font-sets: (
   /* small font */
-  sm: (mobile: 15px, tablet: 13px, desktop: 17px),
+  sm: (mobile: 15px, tablet: 16px, desktop: 17px),
 
   /* normal font */
-  md: (mobile: 16px, tablet: 18px, desktop: 14px),
+  md: (mobile: 16px, tablet: 15px, desktop: 14px),
 
   /* header font */
-  lg: (mobile: 18px, tablet: 22px, desktop: 22px)
+  lg: (mobile: 18px, tablet: 19px, desktop: 20px)
 );

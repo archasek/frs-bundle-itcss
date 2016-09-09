@@ -2,20 +2,22 @@
   @include font-vw(md);
 
   display: inline-block;
-  padding: unit-vw(10px) unit-vw(50px);
-  border-radius: 28px;
+  padding: unit-vw(13px) unit-vw(30px);
+  border-radius: 12px;
   color: $white;
   font-weight: bold;
   background-color: $black;
+  text-align: center;
   text-decoration: none;
+  letter-spacing: 1px;
   cursor: pointer;
 
   @include respond-to(desktop) {
-    padding: unit-vw(10px, desktop) unit-vw(65px, desktop);
+    padding: unit-vw(18px, desktop) unit-vw(65px, desktop);
   }
 
   &--green {
-    color: $white;
+    color: $color-button-font-default;
     background-color: $color-button-default;
   }
 }

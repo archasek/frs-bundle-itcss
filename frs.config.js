@@ -23,7 +23,7 @@ module.exports = function(config, dirs) {
   // config.styles.cssNamenano.safe = false;
 
   //inject - enable group-css-media-queries plugin (disabled by default as unsafe)
-  config.styles.inject.optimizeMediaQueries = true;
+  // config.styles.inject.optimizeMediaQueries = true;
 
   var sassLint = require('gulp-sass-lint');
 
@@ -35,7 +35,27 @@ module.exports = function(config, dirs) {
           'property-sort-order': 0,
           'no-color-literals': 0,
           'no-trailing-whitespace': 0,
-          'mixins-before-declarations': 0
+          'mixins-before-declarations': 0,
+          'shorthand-values': 0,
+          'leading-zero': 0,
+          'class-name-format': [
+            1,
+            {
+              'allow-leading-underscore': true,
+              'convention': 'hyphenatedbem'
+            }
+          ],
+          'empty-line-between-blocks': 0,
+          'variable-name-format': 0,
+          'brace-style': 0,
+          'no-warn': 0,
+          'nesting-depth': [
+            1,
+            {
+              'max-depth': 3
+            }
+          ],
+          'zero-unit': 0
         }
       }))
       .pipe(sassLint.format())
@@ -239,6 +259,8 @@ module.exports = function(config, dirs) {
 
   // bsOpts.host = 'website.local';
   // bsOpts.port = 81;
+
+  bsOpts.notify = false;
 
   //set proxy
   // bsOpts.server = false;

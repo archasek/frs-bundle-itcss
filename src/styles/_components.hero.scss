@@ -1,3 +1,40 @@
 .hero {
-  background: #fe3;
+  position: relative;
+  height: unit-vw(350px);
+  background-image: url('#{$img-dir}test1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include respond-to(desktop) {
+    height: unit-vw(570px, desktop);
+    background-image: url('#{$img-dir}test2.jpg');
+  }
+
+  &__heading {
+    @extend %center-both;
+    @include font-vw((mobile: 27px, desktop: 50px));
+    
+    top: 42%;
+    width: 79%;
+    text-align: center;
+    color: $color-font-opposite;
+    letter-spacing: 2px;
+
+    @include respond-to(desktop) {
+      max-width: unit-vw(820px, desktop);
+    }
+  }
+
+  &__btn {
+    @extend %center-x;
+
+    bottom: 10%;
+    min-width: 100px;
+
+    @include respond-to(desktop) {
+      bottom: 27%;
+      min-width: 190px;
+    }
+  }
 }

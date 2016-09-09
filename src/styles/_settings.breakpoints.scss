@@ -1,1 +1,3 @@
-$sc-design-breakpoints: (mobile: 320px, desktop: 1357px);
+$sc-design-breakpoints: (mobile: 320px, tablet: 800, desktop: 1150);
+
+@include add-breakpoint('mobile', 0px, $overwrite: true);

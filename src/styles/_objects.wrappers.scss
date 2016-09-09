@@ -5,9 +5,9 @@
 .container {
   max-width: 1150px;
   margin: 0 auto;
-  padding: unit-vw(10px) 0;
+  padding: unit-vw(15px) unit-vw(20px);
 
   @include respond-to(desktop) {
-    padding: unit-vw(20px, desktop) 0;
+    padding: unit-vw(20px, desktop);
   }
 }

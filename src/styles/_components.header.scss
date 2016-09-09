@@ -5,5 +5,65 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #888;
+  background: $white;
+  opacity: 0.9;
+
+  & > .container {
+    position: relative;
+    max-width: none;
+
+    @include respond-to(desktop) {
+      padding: unit-vw(30px, desktop) unit-vw(20px, desktop);
+    }
+  }
+}
+
+.logo {
+  display: block;
+  width: unit-vw(67px);
+
+  @include respond-to(desktop) {
+    width: unit-vw(130px, desktop);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.nav {
+  @extend %center-y;
+
+  right: unit-vw(20px);
+
+  @include respond-to(desktop) {
+    right: unit-vw(20px, desktop);
+  }
+
+  &__list {
+    &__item {
+      display: inline-block;
+      margin-left: unit-vw(10px);
+      vertical-align: middle;
+
+      @include respond-to(desktop) {
+        margin-left: unit-vw(35px, desktop);
+      }
+
+      &:last-child {
+        @include respond-to(mobile) {
+          display: none;
+        }
+
+        @include respond-to(desktop) {
+          display: inline-block;
+        }
+      }
+
+      &__link {
+        font-weight: bold;
+      }
+    }
+  }
 }

@@ -1,0 +1,48 @@
+.show-on-mobile {
+  display: none;
+  
+  @include respond-to(mobile-ex) {
+    display: block;
+  }
+}
+
+.show-on-tablet {
+  display: none;
+  
+  @include respond-to(tablet-ex) {
+    display: block;
+  }
+}
+
+.show-on-desktop {
+  display: none;
+  
+  @include respond-to(desktop) {
+    display: block;
+  }
+}
+
+
+.hide-on-mobile {
+  display: block;
+  
+  @include respond-to(mobile-ex) {
+    display: none;
+  }
+}
+
+.hide-on-tablet {
+  display: block;
+  
+  @include respond-to(tablet-ex) {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  display: block;
+  
+  @include respond-to(desktop) {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+a {
+  // &:link,
+  // &:visited,
+  // &:hover,
+  // &:active {
+  //   text-decoration: none;
+  // }
+  color: $color-font-default;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
