@@ -129,7 +129,7 @@ module.exports = function(config, dirs) {
 
   //disable Babel
   config.js.inject.babel = false;
-  config.lint.options.parserOptions.ecmaVersion = 5;
+  // config.lint.options.parserOptions.ecmaVersion = 5;
 
 
   //handy comps references

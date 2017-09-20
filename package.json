@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/archasek/frs-bundle-itcss.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bower": "*",
+    "frontend-starter": "^1.9.3",
+    "gulp-flatten": "^0.3.1",
+    "gulp-iife": "^0.3.0",
+    "gulp-replace-task": "^0.11.0"
+  },
   "devDependencies": {
     "gulp-sass-lint": "^1.2.0"
   },
@@ -22,6 +28,9 @@
   "homepage": "https://github.com/archasek/frs-bundle-itcss#readme",
   "main": "frs.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "make": "npm install --unsafe-perm && bower install --allow-root && npm run build",
+    "start": "npm run frs start",
+    "build": "npm run frs build -- -p",
+    "frs": "frs"
   }
 }

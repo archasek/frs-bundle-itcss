@@ -17,8 +17,8 @@
     
     top: 42%;
     width: 79%;
+    color: $black;
     text-align: center;
-    color: $color-font-opposite;
     letter-spacing: 2px;
 
     @include respond-to(desktop) {
